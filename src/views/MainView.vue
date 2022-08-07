@@ -66,6 +66,9 @@
 import router from "../router";
 export default {
   name: "MainView",
+  mounted() {
+    window.scrollTo(0, 0);
+  },
   methods: {
     startGame(event) {
       router.push({

@@ -117,6 +117,7 @@ import scissors from "../assets/images/icon-scissors.svg";
 
 export default {
   name: "MainView",
+
   methods: {
     chooseForPc(playerChoice) {
       setTimeout(() => {
@@ -182,6 +183,8 @@ export default {
     },
   },
   mounted() {
+    window.scrollTo(0, 0);
+
     this.playerChoice = this.$route.params.player;
     this.chooseForPc(this.$route.params.player);
   },
